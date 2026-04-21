@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core | Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div class="glass-bg"></div>
+    
+    <a href="https://твоє-ім'я.github.io/portfolio/" class="nav-back"><i class="fas fa-chevron-left"></i> Exit to Core</a>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="avatar">VH</div>
+                <span>Vikkie</span>
+            </div>
+            <nav class="side-nav">
+                <button class="active"><i class="fas fa-th-large"></i> Overview</button>
+                <button id="theme-btn"><i class="fas fa-adjust"></i> Appearance</button>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Welcome back, <span class="gradient-text">Creator</span></h1>
+                <p id="current-date">Tuesday, 21 April</p>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Total Tasks</span>
+                    <h2 id="total-tasks">0</h2>
+                </div>
+                <div class="stat-card accent">
+                    <span class="label">Efficiency</span>
+                    <h2>94%</h2>
+                </div>
+            </div>
+
+            <section class="tasks-section">
+                <div class="section-header">
+                    <h2>Current Focus</h2>
+                    <div class="input-group">
+                        <input type="text" id="task-input" placeholder="Add new objective...">
+                        <button id="add-task-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <ul id="task-list">
+                    </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
